@@ -1,0 +1,223 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    xmlns:dist="http://schemas.android.com/apk/distribution"
+4    package="org.tensorflow.codelabs.objectdetection"
+5    android:versionCode="1"
+6    android:versionName="1.0.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="21"
+9-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml
+10        android:targetSdkVersion="33" />
+10-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml
+11
+12    <!-- Enable instant app support -->
+13    <dist:module dist:instant="true" />
+13-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:9:5-40
+13-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:9:18-37
+14
+15    <!-- Declare features -->
+16    <uses-feature android:name="android.hardware.camera" />
+16-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:12:5-60
+16-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:12:19-57
+17
+18    <!-- Declare permissions -->
+19    <uses-permission android:name="android.permission.CAMERA" />
+19-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:15:5-65
+19-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:15:22-62
+20
+21    <queries>
+21-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:17:5-21:15
+22        <intent>
+22-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:18:9-20:18
+23            <action android:name="android.media.action.IMAGE_CAPTURE" />
+23-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:19:13-73
+23-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:19:21-70
+24        </intent>
+25    </queries>
+26
+27    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+27-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:22:5-79
+27-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:22:22-77
+28    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+28-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:23:5-80
+28-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:23:22-78
+29    <uses-permission android:name="android.permission.INTERNET" />
+29-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:24:5-66
+29-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:24:22-64
+30    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+31
+32    <application
+32-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:27:5-98:19
+33        android:allowBackup="true"
+33-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:28:9-35
+34        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+34-->[androidx.core:core:1.6.0] /home/jeonghwan/.gradle/caches/transforms-3/c6805e35222e8ed9e5fcb2d0220b387d/transformed/core-1.6.0/AndroidManifest.xml:24:18-86
+35        android:debuggable="true"
+36        android:icon="@mipmap/ic_launcher"
+36-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:29:9-43
+37        android:label="@string/app_name"
+37-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:30:9-41
+38        android:roundIcon="@mipmap/ic_launcher_round"
+38-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:31:9-54
+39        android:supportsRtl="true"
+39-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:32:9-35
+40        android:testOnly="true"
+41        android:theme="@style/Theme.ObjectDetection" >
+41-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:33:9-53
+42
+43        <!-- <activity android:name="org.tensorflow.codelabs.objectdetection.AlarmActivity" -->
+44        <!-- android:exported="true"> -->
+45        <!-- <intent-filter> -->
+46        <!-- <action android:name="android.intent.action.MAIN" /> -->
+47        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+48        <!-- </intent-filter> -->
+49        <!-- </activity> -->
+50        <activity
+50-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:42:9-62:20
+51            android:name="org.tensorflow.codelabs.objectdetection.MainActivity"
+51-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:43:13-41
+52            android:clearTaskOnLaunch="true"
+52-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:44:13-45
+53            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+53-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:50:13-91
+54            android:exported="true"
+54-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:46:13-36
+55            android:icon="@mipmap/ic_launcher"
+55-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:47:13-47
+56            android:resizeableActivity="true"
+56-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:49:13-46
+57            android:rotationAnimation="seamless"
+57-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:48:13-49
+58            android:theme="@style/AppTheme" >
+58-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:45:13-44
+59
+60            <!-- Main app intent filter -->
+61            <intent-filter>
+61-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:54:13-57:29
+62                <action android:name="android.intent.action.MAIN" />
+62-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:55:17-69
+62-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:55:25-66
+63
+64                <category android:name="android.intent.category.LAUNCHER" />
+64-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:17-77
+64-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:27-74
+65            </intent-filter>
+66
+67            <!-- Declare notch support -->
+68            <meta-data
+68-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:13-83
+69                android:name="android.notch_support"
+69-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:24-60
+70                android:value="true" />
+70-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:61-81
+71        </activity>
+72        <activity
+72-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:63:9-87:20
+73            android:name="org.tensorflow.codelabs.objectdetection.CameraActivity"
+73-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:64:13-43
+74            android:clearTaskOnLaunch="true"
+74-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:65:13-45
+75            android:configChanges="orientation|screenLayout|screenSize|smallestScreenSize"
+75-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:71:13-91
+76            android:exported="true"
+76-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:67:13-36
+77            android:icon="@mipmap/ic_launcher"
+77-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:68:13-47
+78            android:resizeableActivity="true"
+78-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:70:13-46
+79            android:rotationAnimation="seamless"
+79-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:69:13-49
+80            android:theme="@style/AppTheme" >
+80-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:66:13-44
+81
+82            <!-- Main app intent filter -->
+83            <intent-filter>
+83-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:75:13-78:29
+84                <action android:name="android.intent.action.Camera" />
+84-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:76:17-71
+84-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:76:25-68
+85
+86                <category android:name="android.intent.category.LAUNCHER" />
+86-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:17-77
+86-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:27-74
+87            </intent-filter>
+88            <intent-filter>
+88-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:54:13-57:29
+89                <action android:name="android.intent.action.MAIN" />
+89-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:55:17-69
+89-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:55:25-66
+90
+91                <category android:name="android.intent.category.LAUNCHER" />
+91-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:17-77
+91-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:56:27-74
+92            </intent-filter>
+93            <!-- Declare notch support -->
+94            <meta-data
+94-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:13-83
+95                android:name="android.notch_support"
+95-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:24-60
+96                android:value="true" />
+96-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:60:61-81
+97        </activity>
+98
+99        <provider
+99-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:89:9-97:20
+100            android:name="androidx.core.content.FileProvider"
+100-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:90:13-62
+101            android:authorities="org.tensorflow.codelabs.objectdetection.fileprovider"
+101-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:91:13-87
+102            android:exported="false"
+102-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:92:13-37
+103            android:grantUriPermissions="true" >
+103-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:93:13-47
+104            <meta-data
+104-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:94:13-96:54
+105                android:name="android.support.FILE_PROVIDER_PATHS"
+105-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:95:17-67
+106                android:resource="@xml/file_paths" />
+106-->/home/jeonghwan/Desktop/odml-pathways-main/object-detection/codelab2/android/starter/app/src/main/AndroidManifest.xml:96:17-51
+107        </provider>
+108
+109        <uses-library
+109-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:25:9-27:40
+110            android:name="androidx.window.extensions"
+110-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:26:13-54
+111            android:required="false" />
+111-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:27:13-37
+112        <uses-library
+112-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:28:9-30:40
+113            android:name="androidx.window.sidecar"
+113-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:29:13-51
+114            android:required="false" />
+114-->[androidx.window:window:1.0.0-alpha09] /home/jeonghwan/.gradle/caches/transforms-3/2f316d4543385aac341da9392d2d1313/transformed/jetified-window-1.0.0-alpha09/AndroidManifest.xml:30:13-37
+115
+116        <service
+116-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:26:9-35:19
+117            android:name="androidx.camera.core.impl.MetadataHolderService"
+117-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:27:13-75
+118            android:enabled="false"
+118-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:28:13-36
+119            android:exported="false" >
+119-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:29:13-37
+120            <meta-data
+120-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:32:13-34:89
+121                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+121-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:33:17-103
+122                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+122-->[androidx.camera:camera-camera2:1.1.0-beta03] /home/jeonghwan/.gradle/caches/transforms-3/f91dafc7f8595c43dfc9681b72501395/transformed/jetified-camera-camera2-1.1.0-beta03/AndroidManifest.xml:34:17-86
+123        </service>
+124
+125        <provider
+125-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/jeonghwan/.gradle/caches/transforms-3/256dd3ccb0c0c910cef4d43dfcd5b89a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+126            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+126-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/jeonghwan/.gradle/caches/transforms-3/256dd3ccb0c0c910cef4d43dfcd5b89a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+127            android:authorities="org.tensorflow.codelabs.objectdetection.lifecycle-process"
+127-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/jeonghwan/.gradle/caches/transforms-3/256dd3ccb0c0c910cef4d43dfcd5b89a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+128            android:exported="false"
+128-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/jeonghwan/.gradle/caches/transforms-3/256dd3ccb0c0c910cef4d43dfcd5b89a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+129            android:multiprocess="true" />
+129-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/jeonghwan/.gradle/caches/transforms-3/256dd3ccb0c0c910cef4d43dfcd5b89a/transformed/jetified-lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+130    </application>
+131
+132</manifest>
